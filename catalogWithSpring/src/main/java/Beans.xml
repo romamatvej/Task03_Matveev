@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	
+	<!-- <bean id="dateOfIssueOfNews1InGregorian" class="java.util.GregorianCalendar">
+	<constructor-arg index="0" value="2018"/>
+	<constructor-arg index="1" value="2"/>
+	<constructor-arg index="2" value="5"/>
+	</bean> -->
+	
+	<bean id="news1" class="by.htp.jd2.matveev.bean.News"></bean>
+	<bean id="news2" class="by.htp.jd2.matveev.bean.News"></bean>
+	<bean id="newsFeedOutgoing" class="by.htp.jd2.matveev.bean.NewsFeed"></bean>
+	<bean id="newsUpdater" class="by.htp.jd2.matveev.DAO.NewsUpdaterJAXB"></bean>
+	<bean id="filterMask" class="by.htp.jd2.matveev.filter.SearchCriteria"></bean>
+	<bean id="filteredNewsFeed" class="by.htp.jd2.matveev.bean.NewsFeed"></bean>
+		
+</beans>
